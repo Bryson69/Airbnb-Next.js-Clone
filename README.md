@@ -1,3 +1,15 @@
+<h1 align="center">Django Blog App</h1>
+<p align="center">
+    <br>
+     <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" >
+     <img src="https://forthebadge.com/images/badges/built-with-swag.svg" >
+     <img src="svgs\built-with-next-js.svg" >
+     <img src="svgs\powered-by-airbnb.svg" >
+     <!-- <img src="https://forthebadge.com/images/badges/made-with-python.svg" > -->
+    <br>
+</p>
+<br>
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
