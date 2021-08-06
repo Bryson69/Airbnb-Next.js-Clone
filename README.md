@@ -2,7 +2,7 @@
 <p align="center">
     <br>
      <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" >
-     <img src="svgs\built-with-next-js.svg" >
+     <img src="svgs\built-with-next.js.svg" >
      <img src="svgs\powered-by-airbnb.svg" >
      <!-- <img src="https://forthebadge.com/images/badges/made-with-python.svg" > -->
     <br>
