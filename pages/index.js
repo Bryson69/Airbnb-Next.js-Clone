@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Banner from '../components/Banner'
 
 // ==== Functional Component ==== //
 export default function Home() {
@@ -10,8 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Header */}
       <Header />
       {/* Banner */}
+      <Banner />
     </div>
   )
 }
