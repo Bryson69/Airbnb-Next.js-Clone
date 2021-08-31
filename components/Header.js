@@ -78,7 +78,7 @@ function Header({placeholder}) {
                 onChange={(e) => setSearchInput(e.target.value)}
                 className="flex-grow pl-5 bg-transparent outline-none text-sm
                 text-gray-600 placeholder-gray-400" type="text" placeholder={placeholder ||"Start your search"} />
-                <SearchIcon className=" hidden md:inline-flex h-8 
+                <SearchIcon onClick={search} className=" hidden md:inline-flex h-8 
                 bg-red-400 text-white rounded-full p-2 cursor-pointer
                 md:mx-2" 
                 />
@@ -116,10 +116,12 @@ function Header({placeholder}) {
                     min={1}
                     className="w-12 pl-2 text-lg outline-none text-red-400" />
                     </div>
-                    <div className="flex" >
-                        <button onClick={resetInput} className="flex-grow text-gray-500">Cancel</button>
+                    <div className="flex space-x-3" >
+                        <button onClick={resetInput} className="flex-grow w-9 h-9 rounded-sm bg-red-400 hover:bg-red-500
+                        transition duration-700 ease-in text-white">Cancel</button>
                         <button onClick={search}
-                         className="flex-grow text-red-400">Search</button>
+                         className="flex-grow w-9 h-9 rounded-sm bg-red-400 hover:bg-red-500
+                         transition duration-700 ease-in text-white">Search</button>
                     </div>
             </div> }
             
