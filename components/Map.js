@@ -18,7 +18,7 @@ function Map( { searchResults } ) {
         height: '100%',
         latitude: center.latitude,
         longitude: center.longitude,
-        zoom: 8
+        zoom: 11,
     })
 
     return (
@@ -48,6 +48,7 @@ function Map( { searchResults } ) {
 
                 {selectedLocation.long === result.long ? (
                     <Popup
+                    className="rounded-2xl text-sm bg-blue-600 "
                     onClose={() => setSelectedLocation({})}
                     closeOnClick={true}
                     latitude={result.lat}
