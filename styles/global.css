@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @tailwind components;
 
 @layer components{
@@ -7,4 +8,17 @@
         active:scale-95 active:bg-gray-100
         transition duration-100 ease-in-out
     }
+
+    .bannerText{
+        @apply text-sm sm:text-xl font-semibold
+    }
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.cards{
+    position: relative;
+    height: 283.75px;
+    width: 283.75px;
 }
