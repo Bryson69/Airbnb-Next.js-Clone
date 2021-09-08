@@ -61,10 +61,11 @@ export default function Home({ exploreData, cardData, discoverData }) {
         buttonText="Get Inspired"
          />
 
-         <section>
-           <h2 className="text-4xl font-semibold py-8">Discover things to do</h2>
+         <section className="">
+           <h2 className="text-4xl font-semibold py-6">Discover things to do</h2>
 
-           <div className="flex space-x-3 p-2">
+           <div className="flex space-x-3 overflow-scroll 
+          scrollbar-hide p-3 -ml-3">
              {discoverData?.map(({img, title, description}) =>(
                <Discover 
                key={img} 
@@ -75,7 +76,6 @@ export default function Home({ exploreData, cardData, discoverData }) {
              ))}
            </div>
          </section>
-
       </main>
 
       <Footer />
