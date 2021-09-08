@@ -8,8 +8,8 @@ function Discover({img, title, description}) {
                 <Image src={img} layout="fill" className="rounded-xl" />
             </div>
             <div>
-                <h4 className="text-2xl font-medium ml-1 mt-3"> { title } </h4>
-                <p className="text-base ml-1 mt-1"> { description } </p>
+                <h4 className="text-2xl font-medium ml-1 mt-2"> { title } </h4>
+                <p className="text-base ml-1"> { description } </p>
             </div>
         </div>
     )
