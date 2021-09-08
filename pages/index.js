@@ -1,13 +1,15 @@
-import Head from 'next/head'
-import Header from '../components/Header'
-import Banner from '../components/Banner'
+import Head from 'next/head';
+import Header from '../components/Header';
+import Banner from '../components/Banner';
 import SmallCard from '../components/SmallCard';
 import MediumCard from '../components/MediumCard';
 import LargeCard from '../components/LargeCard';
 import Footer from '../components/Footer';
+import Discover from '../components/Discover';
+
 
 // ==== Functional Component ==== //
-export default function Home({ exploreData, cardData }) {
+export default function Home({ exploreData, cardData, discoverData }) {
   return (
     <div className="">
       <Head>
@@ -58,6 +60,22 @@ export default function Home({ exploreData, cardData }) {
         description="Wishlist curated by Airbnb."
         buttonText="Get Inspired"
          />
+
+         <section>
+           <h2 className="text-4xl font-semibold py-8">Discover things to do</h2>
+
+           <div className="flex space-x-3 p-2">
+             {discoverData?.map(({img, title, description}) =>(
+               <Discover 
+               key={img} 
+               img={img}
+               title={title}
+               description={description}
+               />
+             ))}
+           </div>
+         </section>
+
       </main>
 
       <Footer />
@@ -67,12 +85,16 @@ export default function Home({ exploreData, cardData }) {
 
 
 export async function getStaticProps() {
-  const exploreData = await fetch('https://links.papareact.com/pyp')
+  const exploreData = await fetch('https://jsonkeeper.com/b/KKY4')
   .then(
     (res) => res.json()
   );
 
-  const cardData = await fetch('https://links.papareact.com/zp1')
+  const cardData = await fetch('https://jsonkeeper.com/b/MHNM')
+  .then((res) => res.json()
+  );
+
+  const discoverData = await fetch('https://jsonkeeper.com/b/IEYY')
   .then((res) => res.json()
   );
 
@@ -80,6 +102,7 @@ export async function getStaticProps() {
     props: {
       exploreData,
       cardData,
+      discoverData,
     }
   }
 }
