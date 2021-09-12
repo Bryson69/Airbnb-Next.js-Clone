@@ -53,7 +53,7 @@ function Search({ searchResults }) {
                     </div>
                 </section>
 
-                <section className="hidden xl:inline-flex xl:min-w-[580px] ">
+                <section className="hidden xl:inline-flex xl:min-w-[555px] ">
                     <Map searchResults={searchResults}/>
                 </section>
             </main>
@@ -67,7 +67,7 @@ export default Search
 
 
 export async function getServerSideProps() {
-    const searchResults = await fetch("https://links.papareact.com/isz")
+    const searchResults = await fetch("https://jsonkeeper.com/b/KCU1")
     .then(
         (res) => res.json()
     );
