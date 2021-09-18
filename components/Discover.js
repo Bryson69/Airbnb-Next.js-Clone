@@ -3,7 +3,7 @@ import Image from "next/image";
 function Discover({img, title, description}) {
     return (
         <div className="cursor-pointer hover:scale-105 
-        transform transition duration-500 ease-out">
+        transform transition duration-300 ease-out">
             <div className="discover-cards">
                 <Image src={img} layout="fill" className="rounded-xl" />
             </div>
