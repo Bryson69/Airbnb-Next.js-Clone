@@ -60,8 +60,8 @@ export default function Home({ exploreData, cardData, discoverData }) {
         description="Wishlist curated by Airbnb."
         buttonText="Get Inspired"
          />
-
-         <section className="">
+         
+         <section className="py-4">
            <h2 className="text-4xl font-semibold py-6">Discover things to do</h2>
 
            <div className="flex space-x-3 p-3 -ml-3">
